@@ -44,7 +44,7 @@ variable "num_workers" {
 variable "cluster_autoscale" {
   description = "Do you want the cluster's worker pool to autoscale?"
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "cluster_autoscale_min_workers" {
