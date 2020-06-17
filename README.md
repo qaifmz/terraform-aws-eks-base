@@ -1,7 +1,7 @@
 # terraform-aws-eks-base
 
-[![open-issues](https://img.shields.io/github/issues-raw/insight-infrastructure/terraform-aws-eks-base?style=for-the-badge)](https://github.com/insight-infrastructure/terraform-aws-eks-base/issues)
-[![open-pr](https://img.shields.io/github/issues-pr-raw/insight-infrastructure/terraform-aws-eks-base?style=for-the-badge)](https://github.com/insight-infrastructure/terraform-aws-eks-base/pulls)
+[![open-issues](https://img.shields.io/github/issues-raw/qaifmz/terraform-aws-eks-base?style=for-the-badge)](https://github.com/insight-infrastructure/terraform-aws-eks-base/issues)
+[![open-pr](https://img.shields.io/github/issues-pr-raw/qaifmz/terraform-aws-eks-base?style=for-the-badge)](https://github.com/insight-infrastructure/terraform-aws-eks-base/pulls)
 
 ## Features
 
@@ -10,13 +10,13 @@ modules or take the outputs from and use in adjacent modules.
 
 ## Terraform Versions
 
-For Terraform v0.12.0+
+For Terraform v0.12.24+
 
 ## Usage
 
 ```
 module "this" {
-  source = "github.com/insight-infrastructure/terraform-aws-eks-base"
+  source = "github.com/qaifmz/terraform-aws-eks-base"
   id = "awesome-cluster-id"
 }
 ```
@@ -76,10 +76,11 @@ To run them:
 
 ## Authors
 
-Module managed by [insight-infrastructure](https://github.com/insight-infrastructure)
+Module managed by [qaifmz](https://github.com/qaifmz)
 
 ## Credits
 
+- [insight-infrastructure](https://github.com/insight-infrastructure)
 - [Anton Babenko](https://github.com/antonbabenko)
 
 ## License
