@@ -20,6 +20,43 @@ module "this" {
   id = "awesome-cluster-id"
 }
 ```
+
+## Instructions
+
+You will need to configure your AWS credentials before using this project:
+
+### Linux
+Add the following in your `~/.bashrc` or `~/.zshrc` with your credentials:
+```
+export AWS_ACCESS_KEY_ID=YOUR_AWS_ACCESS_KEY_ID
+export AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY
+```
+
+### Windows
+Execute the following in your terminal:
+```
+$ aws configure
+AWS Access Key ID [None]: YOUR_AWS_ACCESS_KEY_ID
+AWS Secret Access Key [None]: YOUR_AWS_SECRET_ACCESS_KEY
+Default region name [None]: us-west-2
+Default output format [None]: json
+```
+
+### Testing the Project
+
+Initialize and Run Terraform Scripts
+```
+terraform init
+terraform apply
+```
+Input Cluster name = `"cluster_name"` and input your choice of AWS Region: `us-west-2`
+
+If the output gives connection errors, input the following commands:
+```
+aws eks --region us-west-2 update-kubeconfig --name cluster_name
+terraform apply
+```
+
 ## Examples
 
 - [defaults](https://github.com/insight-infrastructure/terraform-aws-eks-base/tree/master/examples/defaults)
