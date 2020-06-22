@@ -65,6 +65,10 @@ terraform apply
 No issue is creating limit on this module.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
+
 ## Providers
 
 | Name | Version |
@@ -74,10 +78,10 @@ No issue is creating limit on this module.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
+|------|-------------|------|---------|:--------:|
 | azs | List of availability zones | `list(string)` | `[]` | no |
 | cidr | The cidr range for network | `string` | `"10.0.0.0/16"` | no |
-| cluster\_autoscale | Do you want the cluster's worker pool to autoscale? | `bool` | `false` | no |
+| cluster\_autoscale | Do you want the cluster's worker pool to autoscale? | `bool` | `true` | no |
 | cluster\_autoscale\_max\_workers | Maximum number of workers in worker pool | `number` | `4` | no |
 | cluster\_autoscale\_min\_workers | Minimum number of workers in worker pool | `number` | `1` | no |
 | create | Bool to create | `bool` | `true` | no |
@@ -86,7 +90,7 @@ No issue is creating limit on this module.
 | num\_workers | Number of workers for worker pool | `number` | `1` | no |
 | tags | Tags for resources | `map(string)` | `{}` | no |
 | vpc\_name | The name of the VPC | `string` | `""` | no |
-| worker\_instance\_type | The instance class for workers | `string` | `"r5.large"` | no |
+| worker\_instance\_type | The instance class for workers | `string` | `"m5.2xlarge"` | no |
 
 ## Outputs
 
