@@ -15,6 +15,7 @@ jobs:
             sudo unzip terraform_0.12.20_linux_amd64.zip -d /usr/local/bin
           name: Install Terraform
       - run:
+          name: Run tests
           command: |
             make test
 
