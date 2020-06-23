@@ -1,8 +1,9 @@
 # terraform-aws-eks-base
-<!---
+
 [![Build Status](https://img.shields.io/circleci/build/github/qaifmz/terraform-aws-eks-base?style=for-the-badge)](https://github.com/qaifmz/terraform-aws-eks-base)
--->
+
 [![open-issues](https://img.shields.io/github/issues-raw/qaifmz/terraform-aws-eks-base?style=for-the-badge)](https://github.com/insight-infrastructure/terraform-aws-eks-base/issues)
+
 [![open-pr](https://img.shields.io/github/issues-pr-raw/qaifmz/terraform-aws-eks-base?style=for-the-badge)](https://github.com/insight-infrastructure/terraform-aws-eks-base/pulls)
 
 ## Features
