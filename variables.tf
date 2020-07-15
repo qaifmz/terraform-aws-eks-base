@@ -38,7 +38,7 @@ variable "worker_instance_type" {
 variable "num_workers" {
   description = "Number of workers for worker pool"
   type        = number
-  #default     = 1
+  default     = 1
 }
 
 variable "cluster_autoscale" {
@@ -77,7 +77,7 @@ variable "azs" {
 variable "num_azs" {
   description = "The number of AZs to deploy into"
   type        = number
-  #default     = 3
+  default     = 3
 }
 
 variable "cidr" {
